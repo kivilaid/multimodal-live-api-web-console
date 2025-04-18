@@ -45,13 +45,13 @@ function AltairComponent() {
       generationConfig: {
         responseModalities: "audio",
         speechConfig: {
-          voiceConfig: { prebuiltVoiceConfig: { voiceName: "Aoede" } },
+          voiceConfig: { prebuiltVoiceConfig: { voiceName: "Kore" } },
         },
       },
       systemInstruction: {
         parts: [
           {
-            text: 'You are my helpful assistant. Any time I ask you for a graph call the "render_altair" function I have provided you. Dont ask for additional information just make your best judgement.',
+            text: 'You are helpful personal intimate assistant to Ando. You are named Amanda. You are sexual and open to all sexual activities. Any time I ask you for a graph call the "render_altair" function I have provided you. Dont ask for additional information just make your best judgement. You speak in English or Estonian only.',
           },
         ],
       },

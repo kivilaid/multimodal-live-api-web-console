@@ -44,7 +44,7 @@ function App() {
           <SidePanel />
           <main>
             <div className="main-app-area">
-              {/* APP goes here */}
+                          {/* APP goes here */}
               <Altair />
               <video
                 className={cn("stream", {
@@ -61,6 +61,9 @@ function App() {
               supportsVideo={true}
               onVideoStreamChange={setVideoStream}
             >
+              <button>
+                Tere
+              </button>
               {/* put your own buttons here */}
             </ControlTray>
           </main>
