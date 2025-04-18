@@ -61,9 +61,7 @@ function App() {
               supportsVideo={true}
               onVideoStreamChange={setVideoStream}
             >
-              <button>
-                Tere
-              </button>
+       
               {/* put your own buttons here */}
             </ControlTray>
           </main>
