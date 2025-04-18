@@ -27,15 +27,16 @@ if (typeof API_KEY !== "string") {
   throw new Error("set REACT_APP_GEMINI_API_KEY in .env");
 }
 
-const host = "autopush-generativelanguage.googleapis.com";
-const uri = `wss://${host}/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent`;
+// Use default LiveAPI endpoint; no need to override URL
+// const host = "autopush-generativelanguage.googleapis.com";
+// const uri = `wss://${host}/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent`;
 
 function App() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
     <div className="App">
-      <LiveAPIProvider url={uri} apiKey={API_KEY}>
+      <LiveAPIProvider apiKey={API_KEY}>
         <div className="streaming-console">
           <SidePanel />
           <main>
